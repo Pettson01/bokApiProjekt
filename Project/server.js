@@ -9,6 +9,10 @@ const app = express();
 
 const {getHomePage} = require('./public/js/myModule.js');
 
+//Glöm inte att lägga till:
+//https://developer.nytimes.com/branding
+
+
 
 //Middlewear
 app.use(bodyParser.json());
@@ -25,7 +29,6 @@ app.use(errorhandler());
 //------------------------------------
 
 //Gör filsökvägen lättare att använda
-app.use('/static', express.static('public'))
 
 //Olika "path:s"
 app.get('/', getHomePage);
