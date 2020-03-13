@@ -7,8 +7,6 @@ const path = require('path')
 
 const app = express();
 
-const {getHomePage} = require('./public/js/myModule.js');
-
 //Glöm inte att lägga till:
 //https://developer.nytimes.com/branding
 
@@ -18,6 +16,9 @@ const {getHomePage} = require('./public/js/myModule.js');
 app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(errorhandler());
+
+const {getHomePage} = require('./public/js/myModule.js');
+
 
 //--------------------------------------
 //Här ska koden för API och DB ligga
