@@ -19,9 +19,11 @@ app.use(errorhandler());
 app.use(express.static(__dirname + '/public'));
 
 const {getHomePage} = require('./public/js/myModule.js');
+const {getSecondPage} = require('./public/js/myModule.js')
 
 //Olika "path:s"
 app.get('/', getHomePage);
+app.get('/secondPage', getSecondPage)
 
 console.log("Server running on port: " + port);
 app.listen(port);
