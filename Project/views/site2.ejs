@@ -5,6 +5,7 @@
     <title>Bok För Dig!</title>
 
     <!-- CSS-->
+    <link rel="stylesheet" href="/css/designSite2.css">
     <link rel="stylesheet" href="/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/css/bootstrap-grid.css.map">
     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
@@ -19,7 +20,6 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css.map">
     <link rel="shortcut icon" href="">
 
-    <link rel="shortcut icon" href="">
 
 
     <!-- JS -->
@@ -93,31 +93,16 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-md-3">
-                              <a href="" class="text-decoration-none"> <h6> Hardcover Graphic Books</h6> </a>
+                              <a href="/getHardcoverGraphicBooks" class="text-decoration-none"> <h6> Hardcover Graphic Books</h6> </a>
                           </div>
                           <div class="col-md-3">
-                            <a href="" class="text-decoration-none"> <h6> Hardcover Nonfiction</h6> </a>
+                            <a href="/getHardcoverNonfiction" class="text-decoration-none"> <h6> Hardcover Nonfiction</h6> </a>
                           </div>
                           <div class="col-md-3">
-                            <a href="" class="text-decoration-none"> <h6> E-Book Fiction </h6> </a>
+                            <a href="/getBusiness" class="text-decoration-none"> <h6> Business </h6> </a>
                           </div>
                           <div class="col-md-3">
-                            <a href="/getManga" class="text-decoration-none"> <h6> Manga </h6> </a>
-                          </div>
-                      </div>
-
-                      <div class="row">
-                          <div class="col-md-3">
-                            <a href="" class="text-decoration-none"> <h6> Paperback Graphic Books</h6> </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="" class="text-decoration-none"> <h6> Hardcover Fiction </h6> </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="" class="text-decoration-none"> <h6> E-Book Nonfiction </h6> </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="" class="text-decoration-none"> <h6> Picture Books </h6> </a>
+                             <a href="/getManga" class="text-decoration-none"> <h6> Manga </h6> </a>
                           </div>
                       </div>
                   </div>
@@ -130,9 +115,247 @@
           <h2> Books: </h2>
        </div>
 
+<!-- Bok 1 -->
        <div class="row mb-5">
+          <div class="col-md-3">
+              <img class="bookImages" src="<%= imageLink1 %>" alt="book_Image">
+            </div>
+            <div class="col-md-3">
+              <h6> Titel:  <%= titel1 %> </h6>
+              <h6> Author:  <%= author1 %> </h6>
+              <h6> Publisher:  <%= publisher1 %> </h6>
+              <h6> Rank:  <%= rank1 %></h6>
+            </div>
+            <div class="col-md-4">
+              <h6> Description: </h6>
+              <p>  <%= description1 %> </p>
 
+            </div>
+            <div class="col-md-2  my-auto">
+              <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink1 %>"> Buy</a>
+
+            </div>
        </div>
+
+       <hr class="mt-5 mb-5">
+
+       <!-- Bok 2 -->
+              <div class="row mb-5">
+                 <div class="col-md-3">
+                     <img class="bookImages" src="<%= imageLink2 %>" alt="book_Image">
+                   </div>
+                   <div class="col-md-3">
+                     <h6> Titel:  <%= titel2 %> </h6>
+                     <h6> Author:  <%= author2 %> </h6>
+                     <h6> Publisher:  <%= publisher2 %> </h6>
+                     <h6> Rank:  <%= rank2 %></h6>
+                   </div>
+                   <div class="col-md-4">
+                     <h6> Description: </h6>
+                     <p>  <%= description2 %> </p>
+
+                   </div>
+                   <div class="col-md-2  my-auto">
+                     <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink2 %>"> Buy</a>
+
+                   </div>
+              </div>
+
+              <hr class="mt-5 mb-5">
+
+              <!-- Bok 3 -->
+                     <div class="row mb-5">
+                        <div class="col-md-3">
+                            <img class="bookImages" src="<%= imageLink3 %>" alt="book_Image">
+                          </div>
+                          <div class="col-md-3">
+                            <h6> Titel:  <%= titel3 %> </h6>
+                            <h6> Author:  <%= author3 %> </h6>
+                            <h6> Publisher:  <%= publisher3 %> </h6>
+                            <h6> Rank:  <%= rank3 %></h6>
+                          </div>
+                          <div class="col-md-4">
+                            <h6> Description: </h6>
+                            <p>  <%= description3 %> </p>
+
+                          </div>
+                          <div class="col-md-2  my-auto">
+                            <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink3 %>"> Buy</a>
+
+                          </div>
+                     </div>
+
+                     <hr class="mt-5 mb-5">
+
+                     <!-- Bok 4 -->
+                            <div class="row mb-5">
+                               <div class="col-md-3">
+                                   <img class="bookImages" src="<%= imageLink4 %>" alt="book_Image">
+                                 </div>
+                                 <div class="col-md-3">
+                                   <h6> Titel:  <%= titel4 %> </h6>
+                                   <h6> Author:  <%= author4 %> </h6>
+                                   <h6> Publisher:  <%= publisher4 %> </h6>
+                                   <h6> Rank:  <%= rank4 %></h6>
+                                 </div>
+                                 <div class="col-md-4">
+                                   <h6> Description: </h6>
+                                   <p>  <%= description4 %> </p>
+
+                                 </div>
+                                 <div class="col-md-2  my-auto">
+                                   <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink4 %>"> Buy</a>
+
+                                 </div>
+                            </div>
+
+                            <hr class="mt-5 mb-5">
+
+                            <!-- Bok 5 -->
+                                   <div class="row mb-5">
+                                      <div class="col-md-3">
+                                          <img class="bookImages" src="<%= imageLink5 %>" alt="book_Image">
+                                        </div>
+                                        <div class="col-md-3">
+                                          <h6> Titel:  <%= titel5 %> </h6>
+                                          <h6> Author:  <%= author5 %> </h6>
+                                          <h6> Publisher:  <%= publisher5%> </h6>
+                                          <h6> Rank:  <%= rank5 %></h6>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <h6> Description: </h6>
+                                          <p>  <%= description5 %> </p>
+
+                                        </div>
+                                        <div class="col-md-2  my-auto">
+                                          <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink5 %>"> Buy</a>
+
+                                        </div>
+                                   </div>
+
+                                   <hr class="mt-5 mb-5">
+
+                                   <!-- Bok 6 -->
+                                          <div class="row mb-5">
+                                             <div class="col-md-3">
+                                                 <img class="bookImages" src="<%= imageLink6 %>" alt="book_Image">
+                                               </div>
+                                               <div class="col-md-3">
+                                                 <h6> Titel:  <%= titel6 %> </h6>
+                                                 <h6> Author:  <%= author6 %> </h6>
+                                                 <h6> Publisher:  <%= publisher6 %> </h6>
+                                                 <h6> Rank:  <%= rank6 %></h6>
+                                               </div>
+                                               <div class="col-md-4">
+                                                 <h6> Description: </h6>
+                                                 <p>  <%= description6 %> </p>
+
+                                               </div>
+                                               <div class="col-md-2  my-auto">
+                                                 <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink6 %>"> Buy</a>
+
+                                               </div>
+                                          </div>
+
+                                          <hr class="mt-5 mb-5">
+
+                                          <!-- Bok 7 -->
+                                                 <div class="row mb-5">
+                                                    <div class="col-md-3">
+                                                        <img class="bookImages" src="<%= imageLink7 %>" alt="book_Image">
+                                                      </div>
+                                                      <div class="col-md-3">
+                                                        <h6> Titel:  <%= titel7 %> </h6>
+                                                        <h6> Author:  <%= author7 %> </h6>
+                                                        <h6> Publisher:  <%= publisher7 %> </h6>
+                                                        <h6> Rank:  <%= rank7 %></h6>
+                                                      </div>
+                                                      <div class="col-md-4">
+                                                        <h6> Description: </h6>
+                                                        <p>  <%= description7 %> </p>
+
+                                                      </div>
+                                                      <div class="col-md-2  my-auto">
+                                                        <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink7 %>"> Buy</a>
+
+                                                      </div>
+                                                 </div>
+
+                                                 <hr class="mt-5 mb-5">
+
+
+                                                 <!-- Bok 8-->
+                                                        <div class="row mb-5">
+                                                           <div class="col-md-3">
+                                                               <img class="bookImages" src="<%= imageLink8 %>" alt="book_Image">
+                                                             </div>
+                                                             <div class="col-md-3">
+                                                               <h6> Titel:  <%= titel8 %> </h6>
+                                                               <h6> Author:  <%= author8 %> </h6>
+                                                               <h6> Publisher:  <%= publisher8 %> </h6>
+                                                               <h6> Rank:  <%= rank8 %></h6>
+                                                             </div>
+                                                             <div class="col-md-4">
+                                                               <h6> Description: </h6>
+                                                               <p>  <%= description8 %> </p>
+
+                                                             </div>
+                                                             <div class="col-md-2  my-auto">
+                                                               <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink8 %>"> Buy</a>
+
+                                                             </div>
+                                                        </div>
+
+                                                        <hr class="mt-5 mb-5">
+
+                                                        <!-- Bok 9 -->
+                                                               <div class="row mb-5">
+                                                                  <div class="col-md-3">
+                                                                      <img class="bookImages" src="<%= imageLink9 %>" alt="book_Image">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                      <h6> Titel:  <%= titel9 %> </h6>
+                                                                      <h6> Author:  <%= author9 %> </h6>
+                                                                      <h6> Publisher:  <%= publisher9 %> </h6>
+                                                                      <h6> Rank:  <%= rank9 %></h6>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                      <h6> Description: </h6>
+                                                                      <p>  <%= description9 %> </p>
+
+                                                                    </div>
+                                                                    <div class="col-md-2  my-auto">
+                                                                      <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink9 %>"> Buy</a>
+
+                                                                    </div>
+                                                               </div>
+
+                                                               <hr class="mt-5 mb-5">
+
+                                                               <!-- Bok 10 -->
+                                                                      <div class="row mb-5">
+                                                                         <div class="col-md-3">
+                                                                             <img class="bookImages" src="<%= imageLink10 %>" alt="book_Image">
+                                                                           </div>
+                                                                           <div class="col-md-3">
+                                                                             <h6> Titel:  <%= titel10 %> </h6>
+                                                                             <h6> Author:  <%= author10 %> </h6>
+                                                                             <h6> Publisher:  <%= publisher10 %> </h6>
+                                                                             <h6> Rank:  <%= rank10 %></h6>
+                                                                           </div>
+                                                                           <div class="col-md-4">
+                                                                             <h6> Description: </h6>
+                                                                             <p>  <%= description10 %> </p>
+
+                                                                           </div>
+                                                                           <div class="col-md-2  my-auto">
+                                                                             <a type="button" class="btn btn-secondary btn-lg btn-block" href="<%= buyLink10 %>"> Buy</a>
+
+                                                                           </div>
+                                                                      </div>
+
+                                                                      <hr class="mt-5 mb-5">
+
 </div>
 
 <!-- Body ovan-->

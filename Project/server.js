@@ -22,11 +22,18 @@ const {getHomePage} = require('./public/js/myModule.js');
 const {getSecondPage} = require('./public/js/myModule.js');
 const {getThirdPage} = require('./public/js/myModule.js');
 const {getManga} = require('./public/js/myModule.js');
+const {getHardcoverGraphicBooks} = require('./public/js/myModule.js');
+const {getHardcoverNonfiction} = require('./public/js/myModule.js');
+const {getBusiness} = require('./public/js/myModule.js');
 
 //Olika "path:s"
 app.get('/', getHomePage);
 app.get('/secondPage', getSecondPage);
 app.get('/thirdPage', getThirdPage);
 app.get('/getManga', getManga);
+app.get('/getHardcoverGraphicBooks', getHardcoverGraphicBooks)
+app.get('/getHardcoverNonfiction', getHardcoverNonfiction)
+app.get('/getBusiness', getBusiness);
+
 console.log("Server running on port: " + port);
 app.listen(port);
