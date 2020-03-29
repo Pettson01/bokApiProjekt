@@ -21,11 +21,12 @@ app.use(express.static(__dirname + '/public'));
 const {getHomePage} = require('./public/js/myModule.js');
 const {getSecondPage} = require('./public/js/myModule.js');
 const {getThirdPage} = require('./public/js/myModule.js');
+const {getManga} = require('./public/js/myModule.js');
 
 //Olika "path:s"
 app.get('/', getHomePage);
 app.get('/secondPage', getSecondPage);
 app.get('/thirdPage', getThirdPage);
-
+app.get('/getManga', getManga);
 console.log("Server running on port: " + port);
 app.listen(port);
