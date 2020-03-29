@@ -4,7 +4,7 @@ const request = require("request");
 const api = "G7OYa72GnQpgbW7jTxEtFOOGZ3timdsl";
 
 const app = express();
-let returnObject;
+let a = new Object();
 
 //Ger datan för en specefik kategori
 function getData(category){
@@ -18,15 +18,11 @@ function getData(category){
       bookObject[i] = bodyObj.results.books[i];
     };
 
-    returnObject = bookObject;
-    global.returnObject = returnObject;
+    a = bookObject;
 
-
+    //console.log(a);
   });
 }
-
-
-
 
 module.exports = {
     getHomePage: (req, res) => {
@@ -39,11 +35,7 @@ module.exports = {
       res.render('site3');
     },
     getManga:(req, res)=>{
-      //Skiten är undefined, fixa en global variabel som jag gjorde i Jul Uppgiften
       getData("manga");
-
-      console.log("Getting Manga!");
-
-      console.log("Manga titel: " + returnObject[0].title);
+      
     }
 };
