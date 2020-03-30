@@ -2,6 +2,7 @@
   border-radius: 100px;
 }
 
+/* Gör så att bok bilderna alltid är samma storlek*/
 .bookImages{
   width:80px;
   height:120px;

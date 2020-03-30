@@ -6,21 +6,6 @@ let category;
 
 const app = express();
 
-
-//Ger datan för en specefik kategori
-function getData(category){
-
-  request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
-    const bodyObj = JSON.parse(body);
-
-    //Alla böcker
-  //  console.log("bodyObj.results.books: " + JSON.stringify(bodyObj.results.books, null, 4));
-  });
-}
-
-
-
-
 module.exports = {
     getHomePage: (req, res) => {
       res.render('index', {titel1:"Book For You!"});
@@ -119,9 +104,8 @@ module.exports = {
       category = "manga";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
-        //Alla böcker
-        //console.log("bodyObj.results.books: " + JSON.stringify(bodyObj.results.books, null, 4));
 
+//Renderar sidan
         res.render('site2', {
           imageLink1: bodyObj.results.books[0].book_image,
           imageLink2:bodyObj.results.books[1].book_image,
@@ -197,16 +181,14 @@ module.exports = {
         });
 
       });
-
     },
     getHardcoverGraphicBooks:(req, res)=>{
       //Laddar in detta som default
       category = "hardcover-graphic-books";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
-        //Alla böcker
-        //console.log("bodyObj.results.books: " + JSON.stringify(bodyObj.results.books, null, 4));
 
+        //Renderar sidan
         res.render('site2', {
           imageLink1: bodyObj.results.books[0].book_image,
           imageLink2:bodyObj.results.books[1].book_image,
@@ -289,9 +271,8 @@ module.exports = {
       category = "hardcover-nonfiction";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
-        //Alla böcker
-        //console.log("bodyObj.results.books: " + JSON.stringify(bodyObj.results.books, null, 4));
 
+        //Renderar sidan
         res.render('site2', {
           imageLink1: bodyObj.results.books[0].book_image,
           imageLink2:bodyObj.results.books[1].book_image,
@@ -373,9 +354,8 @@ module.exports = {
       category = "business-books";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
-        //Alla böcker
-        //console.log("bodyObj.results.books: " + JSON.stringify(bodyObj.results.books, null, 4));
 
+        //Renderar sidan
         res.render('site2', {
           imageLink1: bodyObj.results.books[0].book_image,
           imageLink2:bodyObj.results.books[1].book_image,

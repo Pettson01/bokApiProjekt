@@ -18,6 +18,7 @@ app.use(errorhandler());
 
 app.use(express.static(__dirname + '/public'));
 
+//All kod som liiger i en separat fil
 const {getHomePage} = require('./public/js/myModule.js');
 const {getSecondPage} = require('./public/js/myModule.js');
 const {getThirdPage} = require('./public/js/myModule.js');
