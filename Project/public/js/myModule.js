@@ -106,7 +106,7 @@ module.exports = {
 
 //Renderar sidan
         res.render('site2', {
-          imageLink1: bodyObj.results.books[0].book_image,
+          imageLink1:bodyObj.results.books[0].book_image,
           imageLink2:bodyObj.results.books[1].book_image,
           imageLink3:bodyObj.results.books[2].book_image,
           imageLink4:bodyObj.results.books[3].book_image,
