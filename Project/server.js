@@ -4,7 +4,7 @@ const express = require('express')
 const logger = require('morgan')
 const errorhandler = require('errorhandler')
 const port = 3000;
-app = express();
+const app = express();
 
 //Glöm inte att lägga till:
 //https://developer.nytimes.com/branding
