@@ -7,8 +7,8 @@ Slutprodukten blev top 10 böcker då användare kan välja mellan flera kategor
 
 Själva projektet är i Projekt mappen
 
-
-
+O.B.S
+Starta servern som ligger i Project filen för att starta rätt program
 
 
 Av Robin Flink
