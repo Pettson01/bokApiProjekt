@@ -100,7 +100,6 @@ module.exports = {
     },
     getManga:(req, res)=>{
 
-      //Laddar in detta som default
       category = "manga";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
@@ -183,7 +182,6 @@ module.exports = {
       });
     },
     getHardcoverGraphicBooks:(req, res)=>{
-      //Laddar in detta som default
       category = "hardcover-graphic-books";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
@@ -267,7 +265,6 @@ module.exports = {
 
     },
     getHardcoverNonfiction:(req, res)=>{
-      //Laddar in detta som default
       category = "hardcover-nonfiction";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
@@ -350,7 +347,6 @@ module.exports = {
       });
     },
     getBusiness:(req, res)=>{
-      //Laddar in detta som default
       category = "business-books";
       request("https://api.nytimes.com/svc/books/v3/lists/current/" + category + ".json?api-key=" + api, function(error, response, body) {
         const bodyObj = JSON.parse(body);
